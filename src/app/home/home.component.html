@@ -1,0 +1,88 @@
+<app-navigation></app-navigation>
+<div class="home container-fluid">
+  <div class="overlay">
+    <section
+      class="her-wrap js-fullheight"
+      data-section="home"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="container">
+        <div
+          class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
+          data-scrollax-parent="true"
+        >
+          <div class="content col-md-6">
+            <div class="subh">
+              <span class="subheading">Welcome to GGW9 Solution</span>
+              <h1 class="mb-4">We are here <br />To win this Competition</h1>
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                 <p>GGW9</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">GGW9</figcaption>
+              </figure>
+              <p class="mb-4"></p>
+              <p>
+                <a
+                  href="#appointment"
+                  class="btn btn-primary py-3 px-4 rounded-pill"
+                  aria-disabled="true"
+                  data-bs-toggle="modal" data-bs-target="#exampleModal"
+                >
+                  Make an appointment
+                </a>
+
+                
+              </p>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Book Appointment</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="patient-name">Patient Name:</label>
+                          <input type="text" id="patient-name" name="patient-name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="appointment-date">Appointment Date:</label>
+                          <input type="date" id="appointment-date" name="appointment-date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="appointment-time">Appointment Time:</label>
+                          <input type="time" id="appointment-time" name="appointment-time" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="reason-for-visit">Reason for Visit:</label>
+                          <textarea id="reason-for-visit" name="reason-for-visit" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="doctor-name">Doctor Name:</label>
+                          <select id="doctor-name" name="doctor-name" class="form-control" required>
+                            <option value="">Select a Doctor</option>
+                            <option value="Dr. John Doe">Dr. John Doe</option>
+                            <option value="Dr. Jane Smith">Dr. Jane Smith</option>
+                            <option value="Dr. Mike Johnson">Dr. Mike Johnson</option>
+                          </select>
+                        </div>
+                        <div class="form-group mt-3">
+                          <button type="submit" class="btn btn-primary">Schedule Appointment</button>
+                        </div>
+                      </form>
+                      
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
